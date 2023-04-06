@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap");
+* {
+  font-family: "Delicious Handrawn", cursive;
+  font-size: 1.2rem;
+  color: white;
+}
+#root {
+  background: black;
+}
+.general,
+.education,
+.task {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.toggle {
+  display: none;
+}
+.generalInfo {
+  grid-column: span 2;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px;
+}
+input {
+  width: 80%;
+  justify-self: center;
+  color: black;
+}
+button {
+  width: 50%;
+  justify-self: center;
+  color: black;
+}
+.App {
+  min-height: 100vh;
+  width: 100%;
+  text-align: center;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.educationForm {
+  position: absolute;
+  bottom: 30px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+}
+.experienceForm {
+  position: absolute;
+  right: 5px;
+  bottom: 30px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+}
+textarea {
+  justify-self: center;
+  width: 50%;
+  color: black;
+}
+.title {
+  font-size: x-large;
+  font-weight: 400;
+  color: aqua;
+}
+.profilePicture {
+  margin: 20px;
+  align-self: center;
+  justify-self: center;
+  width: 190px;
+  height: 190px;
+  background-image: url(/src/components/images/pngwing.com.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  outline: 3px solid black;
+}
+.CV {
+  background-image: url(./components/images/LifeBlood.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 2px black solid;
+  border-radius: 3px;
+  width: 1000px;
+  gap: 20px;
+}
+.general {
+  align-self: center;
+  box-shadow: 0 0 20px 5px aqua;
+}
+.info {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+}
+.schoolInfo {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  justify-content: center;
+  align-items: center;
+}
+.task {
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  justify-content: center;
+  align-items: center;
+}
+.task,
+.education {
+  position: relative;
+  margin-bottom: 20px;
+  box-shadow: 0 0 20px 5px aqua;
+}
+.form {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+.schoolName {
+  position: relative;
+}
+.schoolNameSpan {
+  position: absolute;
+  bottom: 30px;
+  left: -30px;
+}
+.studyTitle {
+  position: relative;
+}
+.studyTitleSpan {
+  position: absolute;
+  bottom: 30px;
+  left: -30px;
+}
+.dateStudied {
+  position: relative;
+}
+.dateStudiedSpan {
+  position: absolute;
+  bottom: 30px;
+  left: -30px;
+}
+.companyName,
+.companyTitle,
+.mainTasks,
+.dateStarted {
+  position: relative;
+}
+.companyNameSpan,
+.companyTitleSpan,
+.mainTaskSpan,
+.dateStartedSpan {
+  position: absolute;
+  bottom: 30px;
+  left: -30px;
+}
